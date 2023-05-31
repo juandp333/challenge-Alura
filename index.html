@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Encriptador de mensaje</title>
+
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" href="img/alura.png" type="image/png" sizes="16x16">
+    </head>
+    <body>
+        <header>
+            <img src="img/alura.png" alt="logo" class="logo"> 
+        </header>
+        <div class="contenedorPrincipal">
+            <div class="contenedorEncriptar">
+                <textarea id="txtarea" class="txtArea" cols="30" rows="10" placeholder="Ingrese su mensaje a encriptar o desencriptar" autofocus></textarea>
+            </div> 
+            <div class="aviso">
+                <p> Solo letra minusculas y sin acentos </p>
+            </div>
+            <div class="botones">
+                <button class="btnEncriptar" type="button" onclick="encriptar()"> Encriptar </button>
+                <button class="btnDesencriptar" type="button" onclick="desencriptar()"> Desencriptar </button>
+            </div>
+            <div class="contenedorEncriptado">
+                <img src="img/buscando.png" alt="buscando" id="imagen">
+                <div class="mensajeEncriptado" id="mensajeEncriptado">
+                    <h2 id="tituloMensaje"> Ningun mensaje encontrado </h2>
+                    <p id="mensajeParrafo"> Ingresar el texto que desea encriptar o desencriptar</p>       
+                </div>
+                <div class="resultado" id="resultado">
+                    <textarea id="textResultado" class="txtAreaResultado" cols="30" rows="10"></textarea>
+                    <button id="btncopiar" class="btnCopiar" type="button" onclick="copiar()">Copiar</button>
+                    <button type="button" id="btnlimpiar" class="btnLimpiar" onclick="limpiar()">limpiar campos</button>
+                </div>
+            </div>
+        </div> 
+        <footer>
+            <p>&copy; Derechos Reservados Juan Antonio Díaz Pineda</p>
+            <div class="redes">
+
+                <a class="profile-link profile-GITHUB" href="https://github.com/juandp333"  rel="noopener nofollow" target="_blank">
+                    <span class="profile-description profile-GITHUB-description">
+                    </span>
+                    <button type="button">
+                        <img src="img/github.png" alt="github" type="button">
+                    </button>
+                </a>
+               
+                <a class="profile-link profile-LINKEDIN" href="https://linkedin.com/in/juan-antonio-diaz-pineda-3519a6263" rel="noopener nofollow" target="_blank">
+                    <span class="profile-description profile-LINKEDIN-description">
+                    </span>   
+                    <button type="button">
+                        <img src="img/linkedin.png" alt="linkedin">
+                    </button>
+                </a>
+
+            </div>
+        </footer>
+    </body>
+    <script src="js/script.js"></script>
+ </html>
